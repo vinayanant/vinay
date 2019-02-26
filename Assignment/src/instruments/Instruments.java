@@ -10,8 +10,10 @@ public class Instruments {
 
 	public void readTextFiles() {
 		Instruments instruments = new Instruments();
-		String filePath1 = "C:/Users/vinay.anant/Desktop/inst.txt";
-		String filePath2 = "C:/Users/vinay.anant/Desktop/trades.txt";
+		File instFileLocation = new File("inst.txt");
+		File tradeFileLocation = new File("trades.txt");
+		String filePath1 = instFileLocation.getAbsolutePath();
+		String filePath2 = tradeFileLocation.getAbsolutePath();
 		List<String[]> instFileData = new ArrayList<String[]>();
 		List<String[]> tradesFileData = new ArrayList<String[]>();
 		List<IntrumentTradeDetails> listOfIntrumentTradeDetails = new ArrayList<IntrumentTradeDetails>();
