@@ -102,10 +102,10 @@ public class Instruments {
 
             System.out.println();
             System.out.println("Instrument wise traded volume between the date range:");
-            System.out.println("Instrument ID, Instrument Name, Trading Date, Volumne");
+            System.out.println("Instrument ID, \tInstrument Name, \tTrading Date, \t\t\tVolume");
 
             for (IntrumentTradeDetails tradeDetails : listOfIntrumentTradeDetails) {
-                System.out.println(tradeDetails.intrumentId + ",  " + tradeDetails.intrumentName + ",  " + tradeDetails.tradingDate + ",  " + tradeDetails.volume);
+                System.out.println(tradeDetails.intrumentId + ", \t\t\t" + tradeDetails.intrumentName + ", \t\t" + tradeDetails.tradingDate + ", \t" + tradeDetails.volume);
             }
 
             System.out.println();
@@ -143,10 +143,10 @@ public class Instruments {
             }
             System.out.println();
             System.out.println("List of instrument not traded between the dates " + startDate + " & " + toDate);
-            System.out.println("Instrument ID, Instrument Name");
+            System.out.println("Instrument ID, \tInstrument Name");
 
             for (IntrumentsNotTraded instrumentDetails : listOfIintrumentsNotTraded) {
-                System.out.println(instrumentDetails.intrumentId + ",  " + instrumentDetails.intrumentName);
+                System.out.println(instrumentDetails.intrumentId + ", \t\t\t" + instrumentDetails.intrumentName);
             }
         } catch (Exception e) {
             System.out.println("Exception in getIntrumentsNotTraded: ");
