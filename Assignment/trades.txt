@@ -1,2 +1,0 @@
-TradeId,TradeDtTime,InID,qty,price,amount,trader
-T1,30/11/2017 23:11:01,IN1,100,12,1200,TRADER1
